@@ -31,28 +31,31 @@ img{
     width: 1000px;
 
     /*
-        TODO: 
+        TODO:
         - Center up the page
         - Create a flexbox containerer for
         the major page sections
     */
+    margin: 0 auto;
 }
 #site-header{
     /*
         TODO
         - Flexbox property here
     */
+    display: flex;
+    flex-direction: column;
 }
 #site-header div{
     text-align: center;
     padding: 60px 0 120px 0;
     font-size: 4em;
-
     /*
-        TODO: 
+        TODO:
         - Add a background image "header-img.jpg"
         make sure that the path to the image is correct
     */
+    background-image: url('img/header-img.jpg');
 
     background-size: cover;
     background-position: right bottom;
@@ -71,17 +74,20 @@ img{
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
     /*
-        TODO: 
+        TODO:
         - Use the script font: 'Dancing Script' fot this text
     */
+    font-family: 'Dancing Script', cursive;
 }
 #main-navigation{
     background: #444;
 
     /*
-        TODO: 
+        TODO:
         - Use Flexbox to arrange the navigation links
     */
+    display: flex;
+    justify-content: space-around;
 }
 #main-navigation a{
     display: block;
@@ -91,15 +97,17 @@ img{
     padding: 10px 20px;
 
     /*
-        TODO: 
+        TODO:
         - Flexbox - Create general spacing between nav links
     */
+
+    /*See the selected elemeent above!*/
 }
 #main-navigation #logo{
     margin-right: 400px;
 
     /*
-        TODO: 
+        TODO:
         - Flexbox - The logo needs to take up more space
         that the other links
     */
@@ -109,7 +117,7 @@ main{
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
     /*
-        TODO: 
+        TODO:
         - Flexbox: Set the starting width of this element
         - Use relative positioning to bump this upward
     */
@@ -119,7 +127,7 @@ aside{
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
     /*
-        TODO: 
+        TODO:
         - Flexbox: Set the starting width of this element
         - Use relative positioning to bump this upward
     */
@@ -129,6 +137,7 @@ aside h3{
     margin: 0 0 10px 0;
     padding: 0 0 10px 0;
     border-bottom: 1px solid #ccc;
+    flex-basis: 20%;
 }
 aside img{
     border-radius: 50%;
@@ -159,36 +168,23 @@ article time{
 }
 article img{
     /*
-        TODO: 
+        TODO:
         - Float article images to the right
         and match sizes and spacing to the mockup
     */
 }
 article footer p{
     /*
-        TODO: 
+        TODO:
         - Style the article footer
         HINT: Look to the article header;
     */
 }
 #site-footer{
-    
+
     background: #333;
     /*
-        TODO: 
+        TODO:
         - Style the site footer
     */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
