@@ -36,6 +36,9 @@ img{
         - Create a flexbox containerer for
         the major page sections
     */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: 0 auto;
 }
 #site-header{
@@ -121,6 +124,10 @@ main{
         - Flexbox: Set the starting width of this element
         - Use relative positioning to bump this upward
     */
+    flex-basis: 50%;
+    position: relative;
+    bottom: 70px;
+    font-size: 15px;
 }
 aside{
     padding: 20px;
@@ -131,6 +138,10 @@ aside{
         - Flexbox: Set the starting width of this element
         - Use relative positioning to bump this upward
     */
+    position: relative;
+    flex-basis: 20%;
+    bottom: 70px;
+    align-self: auto;
 }
 aside h3{
     text-align: center;
@@ -172,6 +183,9 @@ article img{
         - Float article images to the right
         and match sizes and spacing to the mockup
     */
+    float: right;
+    width: 50%;
+    margin-left: 15px;
 }
 article footer p{
     /*
@@ -179,6 +193,13 @@ article footer p{
         - Style the article footer
         HINT: Look to the article header;
     */
+    font-size: 0.8em;
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+    color: #666;
+    border-top: 1px solid #ccc;
+    text-transform: uppercase;
 }
 #site-footer{
 
@@ -187,4 +208,7 @@ article footer p{
         TODO:
         - Style the site footer
     */
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
